@@ -8,12 +8,12 @@ const Navbar = () => {
                 <h1>
                     Gamer Gear 
                 </h1>
-                <Link to='/'>
+                {/* <Link to='/'>
                     Games
                 </Link>
                 <Link to='/reviews'>
                     Reviews 
-                </Link>
+                </Link> */}
             </div>
         </nav>
     )
