@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Review from '../components/Review.js';
+import Review from '../components/reviews/Review.js';
 import NewReview from '../components/NewReview.js';
 
 import { loadReviews, addReview } from '../action/reviews.js';
