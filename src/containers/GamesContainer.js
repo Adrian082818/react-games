@@ -1,6 +1,6 @@
 import React from 'react';
 import Game from '../components/games/Game.js';
-import ChooseGame from '../components/ChooseGame.js';
+import ChooseGame from '../components/games/ChooseGame.js';
 import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 

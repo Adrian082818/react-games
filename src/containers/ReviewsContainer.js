@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Review from '../components/reviews/Review.js';
-import NewReview from '../components/NewReview.js';
+import NewReview from '../components/reviews/NewReview.js';
 
 import { loadReviews, addReview } from '../action/reviews.js';
 import { connect } from 'react-redux';
