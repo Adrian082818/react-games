@@ -12,7 +12,7 @@ class ReviewsContainer extends Component {
 
     setReview = () => {
         this.setState({
-            reviewId: (Math.floor(math.random() * this.props.playerReviews.length))
+            reviewId: (Math.floor(Math.random() * this.props.playerReviews.length))
         })
     }
 

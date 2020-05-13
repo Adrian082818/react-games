@@ -14,9 +14,9 @@ class NewReview extends Component {
         this.setState({ [event.target.name]: event.target.value })
     }
 
-    handleStarClick = rating => {
-        this.setState({ rating })
-    }
+    // handleStarClick = rating => {
+    //     this.setState({ rating })
+    // }
 
     handleSubmit = event => {
         event.preventDefault()
@@ -35,7 +35,7 @@ class NewReview extends Component {
         return (
             <div className="NewReview">
                 <h3>New Review</h3>
-                <StarRating handleStarClick={this.handleStarClick} rating={this.state.rating} />
+                {/* <StarRating handleStarClick={this.handleStarClick} rating={this.state.rating} /> */}
                 <form onSubmit={this.handleSubmit}>
                     <textarea onChange={this.handleChange}
                     placeholder="Review Content"
