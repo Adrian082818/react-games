@@ -34,8 +34,21 @@ class NewReview extends Component {
     render() {
         return (
             <div className="NewReview">
-                
+                <h3>New Review</h3>
+                <StarRating handleStarClick={this.handleStarClick} rating={this.state.rating} />
+                <form onSubmit={this.handleSubmit}>
+                    <textarea onChange={this.handleChange}
+                    placeholder="Review Content"
+                    value={this.state.content}
+                    name="content" />
+                    <br/>
+                    <input type="submit" value="Add Review" />
+                </form>
+                <div>
+                </div>
             </div>
         )
     }
 }
+
+export default connect(null, { createReview })(NewReview);
