@@ -3,7 +3,15 @@ import { Link } from 'react-router-dom';
 
 const SideBar = ({ games }) => {
     const gameLinks = games.map(game => (
-    <Link key={game.id} to={`/games/${game.id}`}>{game.title} {game.genre} {game.rating} {game.price} </Link>
+    <Link key={game.id} to={`/games/${game.id}`}>
+    {game.title} 
+    <br />
+    {game.genre} 
+    <br />
+    {game.rating}
+    <br />
+    {game.price} 
+    </Link>
     ))
     return(
         <div className="SideBar">

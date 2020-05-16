@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createReview } from '../actions/reviews.js';
-// import StarRating from './StarRating';
+import StarRating from './StarRating';
 
 class NewReview extends Component {
 
@@ -35,7 +35,7 @@ class NewReview extends Component {
         return (
             <div className="NewReview">
                 <h3>New Review</h3>
-                {/* <StarRating handleStarClick={this.handleStarClick} rating={this.state.rating} /> */}
+                <StarRating handleStarClick={this.handleStarClick} rating={this.state.rating} />
                 <form onSubmit={this.handleSubmit}>
                     <textarea 
                     onChange={this.handleChange}

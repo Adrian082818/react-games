@@ -5,8 +5,8 @@ const ChooseGame = () => (
         <h3>
             <span role="img" aria-label="finger point left">
              👈  
-            </span>
             Please choose a game from the list.
+            </span>
         </h3>
     </div>
 )
