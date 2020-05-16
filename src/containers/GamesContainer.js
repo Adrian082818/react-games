@@ -1,13 +1,14 @@
 import React from 'react';
-import Game from '../components/games/Game.js';
-import ChooseGame from '../components/games/ChooseGame.js';
+import Game from '../components/Game.js';
+import ChooseGame from '../components/ChooseGame.js';
+import SideBar from '../components/SideBar.js';
 import { connect } from 'react-redux';
 import { Switch, Route } from 'react-router-dom';
 
 const GamesContainer = ({ games }) => {
     return (
         <div className="GamesContainer">
-
+            <SideBar games={games} />
             <Switch>
                 <Route exact path='/games' component={ ChooseGame } />
                 <Route exact path='/games/:id' render={(routerProps) => {

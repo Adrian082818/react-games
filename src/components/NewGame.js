@@ -12,16 +12,16 @@ const initialState = {
 class NewGame extends Component {
     state = initialState
 
-    handleChange = event => {
+    handleChange = (event) => {
         this.setState({ [event.target.name]: event.target.value })
     }
 
     resetForm = () => {
-        this.setState({initialState})
+        this.setState(initialState)
     }
 
-    handleSubmit = event => {
-        event.preventDefault()
+    handleSubmit = (e) => {
+        e.preventDefault()
         this.props.createGame(this.state, this.props.history)
         .then(response => {
             if (!response.error) {

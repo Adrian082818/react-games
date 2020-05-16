@@ -4,7 +4,7 @@ export const addGame = game => ({ type: 'ADD_GAME', game })
 
 export const fetchGames = () => {
     return dispatch => {
-        return fetch("http://localhost:3000/controllers/games")
+        return fetch("http://localhost:3001/games")
         .then(response => response.json())
         .then(gamesJSON => {
             if (gamesJSON.error) {
@@ -21,7 +21,7 @@ export const createGame = (game) => {
         const body = {
             game
         }
-        return fetch("http://localhost:3000/controllers/games", {
+        return fetch("http://localhost:3001/games", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

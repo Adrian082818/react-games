@@ -8,7 +8,7 @@ const Game = ({ game }) => {
             <p>Rating: {game.rating}</p>
             <p>Price: ${game.price}</p>
         </div>
-        : <h3>Loading...</h3>
+        : <h3>...Still Loading...</h3>
 
     )
 }
