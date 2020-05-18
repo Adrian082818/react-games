@@ -20,7 +20,7 @@ const StarRating = (props) => {
         }
         onMouseOver={hoverOver}
         >
-            {Array.from({ length: 5}, (v, i) => (
+            {Array.from({ length: 5 }, (v, i) => (
                 <Star 
                 starId={i + 1}
                 key={`star_${i + 1} `}

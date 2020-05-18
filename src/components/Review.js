@@ -4,15 +4,15 @@ const Review = ({ review }) => {
     const buildReview = () => {
         switch (review.rating) {
             case 1:
-                return <span role="img" aria-label="One stars">⭐️</span>
+                return <span role="img" aria-label="One Star">⭐️</span>
             case 2:
-                return <span role="img" aria-label="Two stars">⭐️⭐️</span>
+                return <span role="img" aria-label="Two Stars">⭐️⭐️</span>
             case 3:
-                return <span role="img" aria-label="Three stars">⭐️⭐️⭐️</span>
+                return <span role="img" aria-label="Three Stars">⭐️⭐️⭐️</span>
             case 4:
-                return <span role="img" aria-label="Four stars">⭐️⭐️⭐️⭐️</span>
+                return <span role="img" aria-label="Four Stars">⭐️⭐️⭐️⭐️</span>
              default:
-                return <span role="img" aria-label="Five stars">⭐️⭐️⭐️⭐️⭐️</span>
+                return <span role="img" aria-label="Five Stars">⭐️⭐️⭐️⭐️⭐️</span>
 
         }
     }

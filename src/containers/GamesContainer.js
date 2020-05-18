@@ -9,6 +9,7 @@ const GamesContainer = ({ games }) => {
     return (
         <div className="GamesContainer">
             <SideBar games={games} />
+
             <Switch>
                 <Route exact path='/games' component={ ChooseGame } />
                 <Route exact path='/games/:id' render={(routerProps) => {
@@ -16,6 +17,7 @@ const GamesContainer = ({ games }) => {
                     return <Game {...routerProps} game={game} />
                 }} />
             </Switch>
+            
         </div>
     )
 }

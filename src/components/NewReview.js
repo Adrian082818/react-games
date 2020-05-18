@@ -14,7 +14,7 @@ class NewReview extends Component {
         this.setState({ [event.target.name]: event.target.value })
     }
 
-    handleStarClick = rating => {
+    handleStarClick = (rating) => {
         this.setState({ rating })
     }
 
@@ -41,8 +41,8 @@ class NewReview extends Component {
                     onChange={this.handleChange}
                     placeholder="Review Content"
                     value={this.state.content}
-                    name="content" />
-                    <br/>
+                    name="content" 
+                    /><br/>
                     <input type="submit" value="Add Review" />
                 </form>
                 <div>

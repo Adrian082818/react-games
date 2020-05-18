@@ -23,7 +23,9 @@ class ReviewsContainer extends Component {
                     Clicking this will show random review.
                 </button>
                 {this.state.reviewId ? <Review review={this.props.playerReviews.find(review => review.id === this.state.reviewId)} /> : ""}
+                
                 <NewReview />
+
             </div>
         )
     }
